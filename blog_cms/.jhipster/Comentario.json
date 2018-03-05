@@ -1,0 +1,22 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "post",
+            "otherEntityName": "post",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "comentario",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170401130834",
+    "entityTableName": "comentario",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

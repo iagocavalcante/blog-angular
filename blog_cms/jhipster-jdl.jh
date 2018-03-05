@@ -1,0 +1,29 @@
+entity Comentario {
+	comentario String
+}
+
+entity Post {
+	conteudo String,
+    dt_criacao LocalDate,
+    dt_atualizacao LocalDate,
+    tags String,
+    status Boolean
+}
+
+entity Info {
+	sobre String,
+    linkedin String,
+    facebook String,
+    twitter String,
+    avatar String
+}
+
+relationship OneToMany {
+	Post{comentario} to Comentario
+}
+
+paginate Post with infinite-scroll
+
+dto * with mapstruct
+
+service all with serviceImpl

@@ -1,0 +1,57 @@
+
+
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myInfoLabel">Create or edit a Info</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!info.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="info.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" for="field_sobre">Sobre</label>
+            <input type="text" class="form-control" name="sobre" id="field_sobre"
+                [(ngModel)]="info.sobre"
+             />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" for="field_linkedin">Linkedin</label>
+            <input type="text" class="form-control" name="linkedin" id="field_linkedin"
+                [(ngModel)]="info.linkedin"
+             />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" for="field_facebook">Facebook</label>
+            <input type="text" class="form-control" name="facebook" id="field_facebook"
+                [(ngModel)]="info.facebook"
+             />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" for="field_twitter">Twitter</label>
+            <input type="text" class="form-control" name="twitter" id="field_twitter"
+                [(ngModel)]="info.twitter"
+             />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" for="field_avatar">Avatar</label>
+            <input type="text" class="form-control" name="avatar" id="field_avatar"
+                [(ngModel)]="info.avatar"
+             />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

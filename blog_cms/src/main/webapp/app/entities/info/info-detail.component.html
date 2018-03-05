@@ -1,0 +1,41 @@
+
+<div *ngIf="info">
+    <h2><span>Info</span> {{info.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span>Sobre</span></dt>
+        <dd>
+            <span>{{info.sobre}}</span>
+        </dd>
+        <dt><span>Linkedin</span></dt>
+        <dd>
+            <span>{{info.linkedin}}</span>
+        </dd>
+        <dt><span>Facebook</span></dt>
+        <dd>
+            <span>{{info.facebook}}</span>
+        </dd>
+        <dt><span>Twitter</span></dt>
+        <dd>
+            <span>{{info.twitter}}</span>
+        </dd>
+        <dt><span>Avatar</span></dt>
+        <dd>
+            <span>{{info.avatar}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'info/'+ info.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span> Edit</span>
+    </button>
+</div>
