@@ -45,7 +45,7 @@
     "copy-webpack-plugin": "4.6.0",
     "css-loader": "0.27.3",
     "del": "2.2.2",
-    "event-stream": "3.3.4",
+    "event-stream": "3.3.5",
     "exports-loader": "0.6.4",
     "extract-text-webpack-plugin": "2.1.0",
     "file-loader": "0.10.1",
