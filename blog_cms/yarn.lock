@@ -6487,9 +6487,9 @@ ng2-translate@4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/ng2-translate/-/ng2-translate-4.2.0.tgz#83bc8feca329b5fc56a636e36073241c6280c659"
 
-ng2-webstorage@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/ng2-webstorage/-/ng2-webstorage-1.5.1.tgz#0daadf422ef7afcd37bb10d39f5f9511884ebc02"
+ng2-webstorage@1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/ng2-webstorage/-/ng2-webstorage-1.8.0.tgz#02bac5f29cecc2b7a4dfea17d9cebc720edf6b49"
 
 nice-try@^1.0.4:
   version "1.0.5"
