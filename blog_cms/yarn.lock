@@ -10649,6 +10649,6 @@ zenscroll@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/zenscroll/-/zenscroll-4.0.2.tgz#e8d5774d1c0738a47bcfa8729f3712e2deddeb25"
 
-zone.js@0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.2.tgz#85d2c9d4c2cdb36eaeab4b50be68e06bf72be86c"
+zone.js@0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.9.1.tgz#e37c6e5c54c13fae4de26b5ffe8d8e9212da6d9b"
