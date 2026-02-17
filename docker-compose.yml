@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  blog-backend:
+    build:
+      context: ./blog-cms
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:h2:mem:blogdb
+      - SPRING_H2_CONSOLE_ENABLED=true
+    volumes:
+      - blog-data:/home/blog/data
+
+  blog-frontend:
+    build:
+      context: ./blog-cms-angular
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+    depends_on:
+      - blog-backend
+    environment:
+      - API_URL=http://localhost:8080
+
+volumes:
+  blog-data:
